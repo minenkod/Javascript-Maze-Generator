@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> Maze Generator </title>
+</head>
+<style> 
+#cnv
+{
+	border: 5px solid black;
+}
+h1
+{
+	font-size: 50px;
+	text-decoration: underline overline;
+}
+#timeText
+{
+font-size: 40px;	
+color: red;
+}
+
+</style>
+<!---<p id="demo" onclick="cellArray(20)">Debug</p> -->
+ <input name="textbox1" id="textbox1" type="text" />	
+<input name="buttonExecute" onclick="mv(document.getElementById('textbox1').value, 2)" type="button" value="Execute" / />
+<body onload="" bgcolor="White">
+	<!--document.getElementById('textbox1').value -->
+	<center> 
+	<BR>
+	<BR>
+	<h1>JS coding maze game</h1>
+	<input type="button" value="start" onclick="timer()" />
+	<p id="timeText"></p>
+
+	<canvas id="cnv" width="1000px" height="1000px">
+		<script type="text/javascript" src="js/grid.js">
+		
+		</script>
+	</canvas>
+	</center>
+<form name="f1">
+<input type="text" id="level"/>
+<input type="button" value="setLevel" onclick="timer()" />
+<input type="button" value="stop" onclick="stoptimer()" />
+</form>
+
+
+</body>
+</html>
+
+
+
